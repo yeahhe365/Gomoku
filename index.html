@@ -625,7 +625,7 @@
       <!-- Left side: Board and timer -->
       <div class="left-panel">
         <div class="board-container">
-          <canvas id="board" width="600" height="600"></canvas>
+          <canvas id="board" width="660" height="660"></canvas>
         </div>
         <div class="timer" id="moveTimer">上一步耗时：0秒</div>
       </div>
@@ -687,7 +687,7 @@
       const canvas = document.getElementById("board");
       const ctx = canvas.getContext("2d");
       // Add board margin (in pixels)
-      const boardMargin = 30;
+      const boardMargin = 33; // 增加10%，从30变为33
       let cellSize = (canvas.width - 2 * boardMargin) / (boardSize - 1);
       let board = [];
       let gameOver = false;
@@ -719,7 +719,8 @@
         const container = document.querySelector('.board-container');
         const containerWidth = container.clientWidth;
         const maxHeightRatio = window.innerWidth < 768 ? 0.6 : 0.8;
-        const size = Math.min(containerWidth, window.innerHeight * maxHeightRatio);
+        // 尺寸增大10%
+        const size = Math.min(containerWidth, window.innerHeight * maxHeightRatio) * 1.1;
         canvas.width = size;
         canvas.height = size;
         // Recalculate cell size (minus margins)
