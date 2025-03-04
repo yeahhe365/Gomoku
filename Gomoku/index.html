@@ -21,9 +21,9 @@
       --board-lines: #7f5539;
       --black-piece: #0a0a0a;
       --white-piece: #f0f0f0;
-      --radius-sm: 8px;
-      --radius-md: 12px;
-      --radius-lg: 16px;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
       --shadow-sm: 0 2px 4px rgba(0,0,0,0.08);
       --shadow-md: 0 4px 8px rgba(0,0,0,0.12);
       --shadow-lg: 0 8px 16px rgba(0,0,0,0.16);
@@ -44,7 +44,7 @@
     .app-container { 
       max-width: 1200px; 
       margin: 0 auto; 
-      padding: 20px;
+      padding: 15px;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -52,8 +52,8 @@
     
     header { 
       text-align: center; 
-      padding: 20px; 
-      margin-bottom: 30px; 
+      padding: 15px; 
+      margin-bottom: 20px; 
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: white; 
       border-radius: var(--radius-md); 
@@ -81,7 +81,7 @@
     
     header h1 { 
       margin: 0; 
-      font-size: 32px; 
+      font-size: 28px; 
       position: relative;
       z-index: 1;
       text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
@@ -92,33 +92,33 @@
     /* Fixed fullscreen button */
     #fullScreenButton {
       position: fixed;
-      top: 20px;
-      right: 20px;
+      top: 15px;
+      right: 15px;
       z-index: 1000;
       background: var(--primary);
       color: white;
       border: none;
-      padding: 10px 15px;
+      padding: 6px 10px;
       border-radius: var(--radius-md);
       box-shadow: var(--shadow-sm);
       cursor: pointer;
       transition: var(--transition-normal);
       font-family: var(--font-main);
       font-weight: 600;
-      font-size: 14px;
+      font-size: 13px;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 4px;
     }
     
     #fullScreenButton::before {
       content: "⛶";
-      font-size: 16px;
+      font-size: 15px;
     }
     
     #fullScreenButton:hover {
       background: var(--primary-dark);
-      transform: translateY(-3px);
+      transform: translateY(-2px);
       box-shadow: var(--shadow-md);
     }
     
@@ -126,7 +126,7 @@
     .main-content { 
       display: flex; 
       flex-direction: row; 
-      gap: 30px;
+      gap: 20px;
       flex: 1;
     }
     
@@ -141,13 +141,13 @@
       flex: 2; 
       display: flex; 
       flex-direction: column; 
-      gap: 20px;
+      gap: 15px;
     }
     
     .panel-card {
       background: white;
       border-radius: var(--radius-md);
-      padding: 20px;
+      padding: 15px;
       box-shadow: var(--shadow-md);
       transition: var(--transition-fast);
       border: 1px solid rgba(0,0,0,0.05);
@@ -163,29 +163,29 @@
       display: flex; 
       justify-content: center; 
       align-items: center; 
-      gap: 15px; 
-      font-size: 16px;
+      gap: 10px; 
+      font-size: 15px;
     }
     
     .scoreboard { 
       flex-wrap: wrap; 
-      padding: 15px;
+      padding: 10px;
     }
     
     .score-box { 
       display: flex; 
       align-items: center; 
-      gap: 10px; 
+      gap: 8px; 
       background: var(--light); 
-      padding: 10px 18px; 
-      border-radius: 24px;
+      padding: 8px 14px; 
+      border-radius: 20px;
       box-shadow: var(--shadow-sm);
       transition: var(--transition-fast);
       border: 1px solid rgba(0,0,0,0.05);
     }
     
     .score-box:hover {
-      transform: translateY(-3px);
+      transform: translateY(-2px);
       box-shadow: var(--shadow-md);
     }
     
@@ -196,8 +196,8 @@
     
     .player-score, .computer-score { 
       font-weight: bold; 
-      font-size: 20px;
-      min-width: 32px;
+      font-size: 18px;
+      min-width: 28px;
       text-align: center;
       text-shadow: 0 1px 1px rgba(0,0,0,0.1);
     }
@@ -205,28 +205,28 @@
     .player-score {
       color: var(--primary);
       background: rgba(67, 97, 238, 0.1);
-      padding: 3px 8px;
-      border-radius: 12px;
+      padding: 2px 6px;
+      border-radius: 10px;
     }
     
     .computer-score {
       color: var(--secondary);
       background: rgba(58, 12, 163, 0.1);
-      padding: 3px 8px;
-      border-radius: 12px;
+      padding: 2px 6px;
+      border-radius: 10px;
     }
     
     .controls-container { 
       display: flex; 
       flex-direction: column; 
-      gap: 12px;
+      gap: 8px;
     }
     
     .controls, .extra-controls { 
       display: flex; 
       flex-wrap: wrap; 
       justify-content: center; 
-      gap: 8px;
+      gap: 4px;
     }
     
     /* Buttons and selects */
@@ -234,23 +234,23 @@
       background: var(--primary); 
       color: white; 
       border: none; 
-      padding: 10px 16px; 
-      border-radius: 24px; 
-      font-size: 15px; 
+      padding: 7px 12px; 
+      border-radius: 20px; 
+      font-size: 14px; 
       cursor: pointer; 
       transition: var(--transition-normal); 
       box-shadow: var(--shadow-sm);
       font-family: var(--font-main);
       font-weight: 600;
       outline: none;
-      min-width: 90px;
+      min-width: 80px;
       text-align: center;
       letter-spacing: 0.5px;
     }
     
     button:hover { 
       background: var(--primary-dark); 
-      transform: translateY(-3px); 
+      transform: translateY(-2px); 
       box-shadow: var(--shadow-md);
     }
     
@@ -262,20 +262,20 @@
       background-color: white; 
       color: var(--dark); 
       border: 1px solid #ddd;
-      padding-right: 36px;
+      padding-right: 30px;
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
       background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
       background-repeat: no-repeat;
-      background-position: right 12px center;
-      background-size: 16px;
+      background-position: right 10px center;
+      background-size: 14px;
     }
     
     select:hover {
       border-color: var(--primary);
       box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
-      transform: translateY(-3px);
+      transform: translateY(-2px);
     }
     
     #resetScore { 
@@ -315,16 +315,16 @@
       display: flex; 
       justify-content: center; 
       align-items: center; 
-      gap: 10px; 
+      gap: 8px; 
       background: var(--light); 
-      padding: 16px; 
+      padding: 12px; 
       border-radius: var(--radius-md); 
-      font-size: 16px;
-      margin: 10px 0;
+      font-size: 15px;
+      margin: 8px 0;
       box-shadow: var(--shadow-sm);
       position: relative;
       overflow: hidden;
-      min-height: 56px;
+      min-height: 50px;
       border-left: 4px solid var(--primary);
     }
     
@@ -335,7 +335,7 @@
     
     #spinner { 
       animation: spin 1s linear infinite;
-      font-size: 20px;
+      font-size: 18px;
     }
     
     @keyframes spin { 
@@ -348,19 +348,24 @@
       display: flex; 
       justify-content: center; 
       align-items: center; 
-      margin: 20px 0;
+      margin: 15px 0;
       position: relative;
-      padding: 10px;
+      padding: 5px;
+      width: 100%;
+      aspect-ratio: 1/1;
+      max-width: 600px;
     }
     
     canvas { 
-      max-width: 100%; 
-      height: auto; 
+      width: 100%;
+      height: 100%;
       border-radius: var(--radius-lg); 
       box-shadow: var(--shadow-lg);
       background-color: var(--board-bg);
       transition: var(--transition-normal);
       border: 1px solid #e0c9a6;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
     }
     
     canvas:hover {
@@ -370,9 +375,9 @@
     
     .timer {
       background: linear-gradient(to right, rgba(67, 97, 238, 0.05), rgba(76, 201, 240, 0.1));
-      padding: 12px 20px;
-      border-radius: 24px;
-      margin-top: 15px;
+      padding: 8px 15px;
+      border-radius: 20px;
+      margin-top: 10px;
       font-weight: 600;
       display: inline-flex;
       box-shadow: var(--shadow-sm);
@@ -384,17 +389,17 @@
     .log-stats { 
       display: flex; 
       flex-wrap: wrap; 
-      gap: 20px;
+      gap: 15px;
     }
     
     .log-container, .stats { 
       flex: 1; 
-      min-width: 250px; 
+      min-width: 240px; 
       background: white; 
       border-radius: var(--radius-md); 
       box-shadow: var(--shadow-md); 
-      padding: 20px; 
-      height: 220px; 
+      padding: 15px; 
+      height: 200px; 
       overflow-y: auto;
       scrollbar-width: thin;
       scrollbar-color: var(--primary-light) transparent;
@@ -407,7 +412,7 @@
     }
     
     .log-container::-webkit-scrollbar, .stats::-webkit-scrollbar {
-      width: 6px;
+      width: 5px;
     }
     
     .log-container::-webkit-scrollbar-thumb, .stats::-webkit-scrollbar-thumb {
@@ -416,10 +421,10 @@
     }
     
     .log-container h2, .stats h2 { 
-      font-size: 20px; 
+      font-size: 18px; 
       color: var(--primary); 
-      margin: 0 0 15px 0; 
-      padding-bottom: 10px; 
+      margin: 0 0 12px 0; 
+      padding-bottom: 8px; 
       border-bottom: 2px solid rgba(67, 97, 238, 0.2);
       font-weight: 700;
       position: sticky;
@@ -429,9 +434,9 @@
     }
     
     .log-entry { 
-      font-size: 14px; 
-      margin: 6px 0; 
-      padding: 8px 10px; 
+      font-size: 13px; 
+      margin: 5px 0; 
+      padding: 6px 8px; 
       border-radius: var(--radius-sm);
       transition: var(--transition-fast);
       border-left: 3px solid transparent;
@@ -446,9 +451,9 @@
     .stats p { 
       display: flex; 
       justify-content: space-between; 
-      margin: 12px 0; 
-      font-size: 15px;
-      padding: 10px 12px;
+      margin: 10px 0; 
+      font-size: 14px;
+      padding: 8px 10px;
       border-radius: var(--radius-sm);
       background-color: var(--light);
       transition: var(--transition-fast);
@@ -465,37 +470,37 @@
       font-weight: 600;
       color: var(--primary);
       background: rgba(67, 97, 238, 0.1);
-      padding: 2px 8px;
-      border-radius: 12px;
+      padding: 1px 6px;
+      border-radius: 10px;
     }
     
     /* Responsive design */
     @media (max-width: 768px) {
       .app-container { 
-        padding: 12px;
+        padding: 10px;
       }
       
       header {
-        padding: 15px;
-        margin-bottom: 20px;
+        padding: 12px;
+        margin-bottom: 15px;
       }
       
       header h1 {
-        font-size: 24px;
+        font-size: 22px;
       }
       
       .main-content { 
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
       }
       
       .panel-card {
-        padding: 15px;
+        padding: 12px;
       }
       
       .scoreboard { 
         flex-wrap: wrap;
-        padding: 10px;
+        padding: 8px;
       }
       
       .controls, .extra-controls { 
@@ -504,37 +509,41 @@
       
       button, select { 
         flex-grow: 1; 
-        font-size: 14px; 
-        padding: 8px 12px;
-        min-width: 80px;
+        font-size: 13px; 
+        padding: 6px 10px;
+        min-width: 75px;
       }
       
       .log-container, .stats { 
         min-width: 100%; 
-        height: 180px;
-        padding: 15px;
+        height: 160px;
+        padding: 12px;
       }
       
       .timer {
-        font-size: 14px;
-        padding: 8px 12px;
+        font-size: 13px;
+        padding: 6px 10px;
       }
       
       #fullScreenButton {
-        top: 10px;
-        right: 10px;
-        padding: 8px 12px;
+        top: 8px;
+        right: 8px;
+        padding: 5px 10px;
         font-size: 12px;
+      }
+      
+      .board-container {
+        max-width: 90vw;
       }
     }
     
     @media (min-width: 769px) and (max-width: 1100px) {
-      canvas { 
-        max-height: 70vh;
+      .board-container {
+        max-width: 500px;
       }
       
       .app-container {
-        padding: 15px;
+        padding: 12px;
       }
     }
     
@@ -590,7 +599,7 @@
       position: absolute;
       background: rgba(0, 0, 0, 0.8);
       color: white;
-      padding: 5px 10px;
+      padding: 4px 8px;
       border-radius: 4px;
       font-size: 12px;
       pointer-events: none;
@@ -609,8 +618,8 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      margin-right: 6px;
-      font-size: 16px;
+      margin-right: 4px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -625,7 +634,7 @@
       <!-- Left side: Board and timer -->
       <div class="left-panel">
         <div class="board-container">
-          <canvas id="board" width="660" height="660"></canvas>
+          <canvas id="board"></canvas>
         </div>
         <div class="timer" id="moveTimer">上一步耗时：0秒</div>
       </div>
@@ -641,7 +650,7 @@
               <span class="score-label">电脑胜：</span>
               <span id="computerScore" class="computer-score">0</span>
             </div>
-            <button id="resetScore"><span class="btn-icon">🔄</span>重置分数</button>
+            <button id="resetScore"><span class="btn-icon">🔄</span>重置</button>
           </div>
         </div>
         
@@ -649,17 +658,17 @@
           <div class="controls">
             <!-- Turn order dropdown -->
             <select id="turnOrder">
-              <option value="computer" selected>机器人先手</option>
-              <option value="player">玩家先手</option>
+              <option value="player" selected>玩家先手</option>
+              <option value="computer">机器人先手</option>
             </select>
             <button id="restart"><span class="btn-icon">🔄</span>重新开始</button>
             <button id="undo"><span class="btn-icon">↩️</span>悔棋</button>
-            <button id="toggleSound"><span class="btn-icon">🔊</span>声音：开</button>
+            <button id="toggleSound"><span class="btn-icon">🔊</span>声音</button>
           </div>
           <div class="extra-controls">
-            <button id="saveGame"><span class="btn-icon">💾</span>保存游戏</button>
-            <button id="loadGame"><span class="btn-icon">📂</span>载入游戏</button>
-            <button id="replayGame"><span class="btn-icon">▶️</span>重放游戏</button>
+            <button id="saveGame"><span class="btn-icon">💾</span>保存</button>
+            <button id="loadGame"><span class="btn-icon">📂</span>载入</button>
+            <button id="replayGame"><span class="btn-icon">▶️</span>重放</button>
           </div>
         </div>
         
@@ -686,9 +695,11 @@
       const boardSize = 15;
       const canvas = document.getElementById("board");
       const ctx = canvas.getContext("2d");
-      // Add board margin (in pixels)
-      const boardMargin = 33; // 增加10%，从30变为33
-      let cellSize = (canvas.width - 2 * boardMargin) / (boardSize - 1);
+      // 添加棋盘边距（像素）
+      const boardMargin = 30;
+      // 线条宽度设为偶数，避免模糊
+      const gridThickness = 2;
+      let cellSize;
       let board = [];
       let gameOver = false;
       let waitingForComputer = false;
@@ -701,12 +712,11 @@
       let soundEnabled = true;
       let animationEnabled = true;
       let timerEnabled = true;
-      // Default settings
+      // 默认设置
       let boardBgColor = "#F3D5B5";
       let boardLineColor = "#7F5539";
       let blackPieceColor = "#0A0A0A";
       let whitePieceColor = "#F0F0F0";
-      let gridThickness = 2;
       let pieceRadiusRatio = 0.38;
       let lastMoveTime = Date.now();
       let totalMoveTime = 0;
@@ -714,19 +724,50 @@
       const gameLog = document.getElementById("gameLog");
       // 修复tooltip持续显示问题 - 添加一个全局变量来追踪当前的tooltip
       let activeTooltip = null;
-
-      function resizeCanvas() {
+      // 设备像素比
+      const dpr = window.devicePixelRatio || 1;
+      // 修复多次点击重新开始的问题
+      let computerMoveTimer = null;
+      // 添加棋子颜色变量（五子棋规则：先手黑棋后手白棋）
+      let playerPiece = 1;  // 默认玩家使用黑棋
+      let computerPiece = 2;  // 默认电脑使用白棋
+      
+      // 解决Canvas模糊问题
+      function fixCanvasBlur() {
+        // 获取 canvas 的 CSS 尺寸
+        const rect = canvas.getBoundingClientRect();
+        
+        // 设置 canvas 的物理像素尺寸
+        canvas.width = rect.width * dpr;
+        canvas.height = rect.height * dpr;
+        
+        // 缩放 context 以匹配设备像素比
+        ctx.scale(dpr, dpr);
+        
+        // 设置 CSS 尺寸（不变）
+        canvas.style.width = rect.width + 'px';
+        canvas.style.height = rect.height + 'px';
+        
+        // 重新计算格子大小
+        cellSize = (rect.width - 2 * boardMargin) / (boardSize - 1);
+      }
+      
+      // 设置棋盘初始尺寸
+      function setCanvasSize() {
         const container = document.querySelector('.board-container');
         const containerWidth = container.clientWidth;
-        const maxHeightRatio = window.innerWidth < 768 ? 0.6 : 0.8;
-        // 尺寸增大10%
-        const size = Math.min(containerWidth, window.innerHeight * maxHeightRatio) * 1.1;
-        canvas.width = size;
-        canvas.height = size;
-        // Recalculate cell size (minus margins)
-        cellSize = (canvas.width - 2 * boardMargin) / (boardSize - 1);
-        canvas.style.width = size + 'px';
-        canvas.style.height = size + 'px';
+        
+        // 保持正方形比例
+        canvas.style.width = containerWidth + 'px';
+        canvas.style.height = containerWidth + 'px';
+        
+        // 修复模糊问题
+        fixCanvasBlur();
+      }
+
+      function resizeCanvas() {
+        setCanvasSize();
+        drawBoard();
       }
 
       function loadScore() {
@@ -809,6 +850,12 @@
       }
 
       function initBoard() {
+        // 清除现有的计时器
+        if (computerMoveTimer) {
+          clearTimeout(computerMoveTimer);
+          computerMoveTimer = null;
+        }
+        
         board = [];
         for (let i = 0; i < boardSize; i++) {
           board[i] = [];
@@ -829,13 +876,22 @@
         clearLog();
         updateStats();
 
-        // Check turn order setting
+        // Check turn order setting and set the colors
         const turnOrder = document.getElementById("turnOrder").value;
         if(turnOrder === "computer") {
+          // Computer plays first, so it should use black pieces (1)
+          playerPiece = 2;  // Player uses white pieces
+          computerPiece = 1;  // Computer uses black pieces
           waitingForComputer = true;
           updateStatus("电脑正在思考...");
           lastMoveTime = Date.now();
-          setTimeout(computerMove, 800);
+          computerMoveTimer = setTimeout(computerMove, 800);
+        } else {
+          // Player plays first, so they should use black pieces (1)
+          playerPiece = 1;  // Player uses black pieces
+          computerPiece = 2;  // Computer uses white pieces
+          waitingForComputer = false;
+          updateStatus("请玩家落子");
         }
       }
 
@@ -843,24 +899,33 @@
         ctx.strokeStyle = boardLineColor;
         ctx.lineWidth = gridThickness;
         
-        // Draw grid lines (between boardMargin and canvas.width - boardMargin)
+        // 使用整数坐标和0.5偏移量绘制清晰的线条
         for (let i = 0; i < boardSize; i++) {
+          // 计算精确的位置，避免小数点坐标
+          const pos = Math.floor(boardMargin + i * cellSize) + 0.5;
+          
+          // 绘制水平线
           ctx.beginPath();
-          ctx.moveTo(boardMargin, boardMargin + i * cellSize);
-          ctx.lineTo(canvas.width - boardMargin, boardMargin + i * cellSize);
+          ctx.moveTo(boardMargin, pos);
+          ctx.lineTo(canvas.width / dpr - boardMargin, pos);
           ctx.stroke();
+          
+          // 绘制垂直线
           ctx.beginPath();
-          ctx.moveTo(boardMargin + i * cellSize, boardMargin);
-          ctx.lineTo(boardMargin + i * cellSize, canvas.height - boardMargin);
+          ctx.moveTo(pos, boardMargin);
+          ctx.lineTo(pos, canvas.height / dpr - boardMargin);
           ctx.stroke();
         }
         
-        // Draw star points (traditional intersections)
+        // 绘制星位点（传统交叉点）
         const starPoints = [ {x: 3, y: 3}, {x: 11, y: 3}, {x: 3, y: 11}, {x: 11, y: 11}, {x: 7, y: 7} ];
         ctx.fillStyle = "#5a3e2b";
         for (const point of starPoints) {
           ctx.beginPath();
-          ctx.arc(boardMargin + point.x * cellSize, boardMargin + point.y * cellSize, cellSize * 0.12, 0, 2 * Math.PI);
+          // 确保星位点在正确的整数位置
+          const x = Math.floor(boardMargin + point.x * cellSize) + 0.5;
+          const y = Math.floor(boardMargin + point.y * cellSize) + 0.5;
+          ctx.arc(x, y, Math.floor(cellSize * 0.12), 0, 2 * Math.PI);
           ctx.fill();
         }
       }
@@ -876,17 +941,18 @@
       }
 
       function drawPiece(i, j, color) {
-        const x = boardMargin + i * cellSize;
-        const y = boardMargin + j * cellSize;
-        const radius = cellSize * pieceRadiusRatio;
+        // 确保坐标是整数
+        const x = Math.floor(boardMargin + i * cellSize) + 0.5;
+        const y = Math.floor(boardMargin + j * cellSize) + 0.5;
+        const radius = Math.floor(cellSize * pieceRadiusRatio);
         
-        // Piece shadow
+        // 棋子阴影
         ctx.beginPath();
         ctx.arc(x + 2, y + 2, radius, 0, 2 * Math.PI);
         ctx.fillStyle = "rgba(0,0,0,0.3)";
         ctx.fill();
         
-        // Piece body
+        // 棋子主体
         ctx.beginPath();
         ctx.arc(x, y, radius, 0, 2 * Math.PI);
         let gradient = ctx.createRadialGradient(x - radius/3, y - radius/3, radius * 0.1, x, y, radius);
@@ -900,13 +966,13 @@
         ctx.fillStyle = gradient;
         ctx.fill();
         
-        // Piece highlight
+        // 棋子高光
         ctx.beginPath();
         ctx.arc(x - radius*0.2, y - radius*0.2, radius * 0.15, 0, 2 * Math.PI);
         ctx.fillStyle = color === 1 ? "rgba(255,255,255,0.2)" : "rgba(255,255,255,0.8)";
         ctx.fill();
         
-        // Last move marker
+        // 最后一步标记
         if (animationEnabled && lastMove && lastMove.x === i && lastMove.y === j) {
           const pulse = 3 + Math.sin(pulseAngle) * 2;
           ctx.strokeStyle = "rgba(255,0,0,0.7)";
@@ -916,7 +982,7 @@
           ctx.stroke();
         }
         
-        // Winning line marker
+        // 胜利线标记
         if (winLine.some(pt => pt.x === i && pt.y === j)) {
           ctx.strokeStyle = "rgba(255,215,0,0.8)";
           ctx.lineWidth = 3;
@@ -934,17 +1000,21 @@
 
       function drawBoard() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        // 绘制棋盘背景
         ctx.fillStyle = boardBgColor;
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillRect(0, 0, canvas.width / dpr, canvas.height / dpr);
+        
+        // 绘制网格和棋子
         drawGrid();
         drawPieces();
         
-        // Hover effect
+        // 悬浮效果
         if (!gameOver && !waitingForComputer && hoverPos) {
-          const hx = boardMargin + hoverPos.x * cellSize;
-          const hy = boardMargin + hoverPos.y * cellSize;
+          const hx = Math.floor(boardMargin + hoverPos.x * cellSize) + 0.5;
+          const hy = Math.floor(boardMargin + hoverPos.y * cellSize) + 0.5;
           ctx.beginPath();
-          ctx.arc(hx, hy, cellSize * pieceRadiusRatio, 0, 2 * Math.PI);
+          ctx.arc(hx, hy, Math.floor(cellSize * pieceRadiusRatio), 0, 2 * Math.PI);
           ctx.fillStyle = "rgba(0,0,0,0.15)";
           ctx.fill();
           ctx.strokeStyle = "rgba(0,0,0,0.3)";
@@ -1090,8 +1160,8 @@
       }
 
       function getMoveScore(x, y) {
-        const scoreAI = evaluatePoint(x, y, 2);      // Computer (AI) score
-        const scoreHuman = evaluatePoint(x, y, 1);   // Human player score
+        const scoreAI = evaluatePoint(x, y, computerPiece);      // 使用computerPiece而不是硬编码的2
+        const scoreHuman = evaluatePoint(x, y, playerPiece);   // 使用playerPiece而不是硬编码的1
         
         // Difficulty weights
         const offenseWeight = 1.1;  // Weight for AI's own moves
@@ -1117,13 +1187,13 @@
           if (currentScore >= 90000) return m;
           
           // Simulate this move and check opponent's response
-          board[m.x][m.y] = 2;
+          board[m.x][m.y] = computerPiece;  // 使用computerPiece而不是硬编码的2
           const oppCandidates = getCandidateMoves();
           let oppBestScore = 0;
           
           for (const om of oppCandidates) {
             if (board[om.x][om.y] !== 0) continue;
-            const oppScore = evaluatePoint(om.x, om.y, 1);
+            const oppScore = evaluatePoint(om.x, om.y, playerPiece);  // 使用playerPiece而不是硬编码的1
             if (oppScore > oppBestScore) oppBestScore = oppScore;
           }
           
@@ -1170,12 +1240,12 @@
         const rect = canvas.getBoundingClientRect();
         const scaleX = canvas.width / rect.width;
         const scaleY = canvas.height / rect.height;
-        const x = (e.clientX - rect.left) * scaleX;
-        const y = (e.clientY - rect.top) * scaleY;
+        const x = (e.clientX - rect.left) * scaleX / dpr;
+        const y = (e.clientY - rect.top) * scaleY / dpr;
         
         // Don't process clicks outside the board grid
-        if(x < boardMargin || x > canvas.width - boardMargin || 
-           y < boardMargin || y > canvas.height - boardMargin) return;
+        if(x < boardMargin || x > canvas.width / dpr - boardMargin || 
+           y < boardMargin || y > canvas.height / dpr - boardMargin) return;
            
         const i = Math.round((x - boardMargin) / cellSize);
         const j = Math.round((y - boardMargin) / cellSize);
@@ -1183,13 +1253,13 @@
         if (i < 0 || i >= boardSize || j < 0 || j >= boardSize) return;
         if (board[i][j] !== 0) return;  // Space already occupied
         
-        // Player's move
-        board[i][j] = 1;
+        // Player's move - 使用playerPiece而不是硬编码的1
+        board[i][j] = playerPiece;
         const moveTime = (Date.now() - lastMoveTime) / 1000;
         totalMoveTime += moveTime;
         if (moveTime > maxMoveTime) maxMoveTime = moveTime;
         
-        moveHistory.push({ x: i, y: j, color: 1, time: moveTime });
+        moveHistory.push({ x: i, y: j, color: playerPiece, time: moveTime });
         lastMove = { x: i, y: j };
         playSound();
         addLogEntry(`玩家落子：(${i}, ${j}) 耗时：${moveTime.toFixed(1)}秒`);
@@ -1197,7 +1267,7 @@
         drawBoard();
         
         // Check for win
-        const line = getWinningLine(i, j, 1);
+        const line = getWinningLine(i, j, playerPiece);
         if (line) {
           winLine = line;
           gameOver = true;
@@ -1220,7 +1290,7 @@
         updateStatus("电脑正在思考...");
         waitingForComputer = true;
         lastMoveTime = Date.now();
-        setTimeout(computerMove, 800);
+        computerMoveTimer = setTimeout(computerMove, 800);
       }
 
       function computerMove() {
@@ -1229,13 +1299,13 @@
         const move = getAIMove();
         if (!move) return;
         
-        // Computer makes its move
-        board[move.x][move.y] = 2;
+        // Computer makes its move - 使用computerPiece而不是硬编码的2
+        board[move.x][move.y] = computerPiece;
         const moveTime = (Date.now() - lastMoveTime) / 1000;
         totalMoveTime += moveTime;
         if (moveTime > maxMoveTime) maxMoveTime = moveTime;
         
-        moveHistory.push({ x: move.x, y: move.y, color: 2, time: moveTime });
+        moveHistory.push({ x: move.x, y: move.y, color: computerPiece, time: moveTime });
         lastMove = { x: move.x, y: move.y };
         playSound();
         addLogEntry(`电脑落子：(${move.x}, ${move.y}) 耗时：${moveTime.toFixed(1)}秒`);
@@ -1243,7 +1313,7 @@
         drawBoard();
         
         // Check for win
-        const line = getWinningLine(move.x, move.y, 2);
+        const line = getWinningLine(move.x, move.y, computerPiece);
         if (line) {
           winLine = line;
           gameOver = true;
@@ -1277,14 +1347,14 @@
         winLine = [];
         
         // Undo computer move first (if it exists)
-        if (moveHistory.length > 0 && moveHistory[moveHistory.length - 1].color === 2) {
+        if (moveHistory.length > 0 && moveHistory[moveHistory.length - 1].color === computerPiece) {
           const move = moveHistory.pop();
           board[move.x][move.y] = 0;
           addLogEntry(`悔棋：撤销电脑落子 (${move.x}, ${move.y})`);
         }
         
         // Then undo player move
-        if (moveHistory.length > 0 && moveHistory[moveHistory.length - 1].color === 1) {
+        if (moveHistory.length > 0 && moveHistory[moveHistory.length - 1].color === playerPiece) {
           const move = moveHistory.pop();
           board[move.x][move.y] = 0;
           addLogEntry(`悔棋：撤销玩家落子 (${move.x}, ${move.y})`);
@@ -1309,6 +1379,8 @@
         updateStatus("🎬 正在重放游戏...");
         let replayIndex = 0;
         const savedHistory = JSON.parse(JSON.stringify(moveHistory));
+        const savedPlayerPiece = playerPiece;  // 保存当前的棋子颜色设置
+        const savedComputerPiece = computerPiece;
         
         initBoard();
         
@@ -1322,7 +1394,7 @@
           const move = savedHistory[replayIndex];
           board[move.x][move.y] = move.color;
           lastMove = { x: move.x, y: move.y };
-          addLogEntry(`重放：${move.color === 1 ? "玩家" : "电脑"} (${move.x}, ${move.y})`);
+          addLogEntry(`重放：${move.color === savedPlayerPiece ? "玩家" : "电脑"} (${move.x}, ${move.y})`);
           replayIndex++;
           drawBoard();
           
@@ -1363,11 +1435,11 @@
         const rect = canvas.getBoundingClientRect();
         const scaleX = canvas.width / rect.width;
         const scaleY = canvas.height / rect.height;
-        const x = (e.clientX - rect.left) * scaleX;
-        const y = (e.clientY - rect.top) * scaleY;
+        const x = (e.clientX - rect.left) * scaleX / dpr;
+        const y = (e.clientY - rect.top) * scaleY / dpr;
         
-        if(x < boardMargin || x > canvas.width - boardMargin || 
-           y < boardMargin || y > canvas.height - boardMargin) {
+        if(x < boardMargin || x > canvas.width / dpr - boardMargin || 
+           y < boardMargin || y > canvas.height / dpr - boardMargin) {
           hoverPos = null;
           document.getElementById("coordDisplay").innerText = "";
           return;
@@ -1456,7 +1528,7 @@
       });
 
       function initGame() {
-        resizeCanvas();
+        setCanvasSize();
         window.addEventListener("resize", resizeCanvas);
         loadScore();
         updateScoreboard();
@@ -1488,8 +1560,8 @@
         document.getElementById("toggleSound").addEventListener("click", function() {
           soundEnabled = !soundEnabled;
           this.innerHTML = soundEnabled ? 
-            '<span class="btn-icon">🔊</span>声音：开' : 
-            '<span class="btn-icon">🔇</span>声音：关';
+            '<span class="btn-icon">🔊</span>声音' : 
+            '<span class="btn-icon">🔇</span>静音';
           addLogEntry("声音设置：" + (soundEnabled ? "开" : "关"));
         });
         
